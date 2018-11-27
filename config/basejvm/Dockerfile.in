@@ -1,0 +1,3 @@
+FROM _NS_/pallet-baseos:_TAG_
+COPY scripts /tmp/scripts
+RUN cd /tmp/scripts && common/jvm.sh && common/cleanup.sh && rm -rf /tmp/scripts
